@@ -1,0 +1,18 @@
+# IntelliJ / IDE
+.idea/
+*.iml
+
+# Backend (Spring Boot / Maven)
+trip-planner-backend/target/
+trip-planner-backend/.mvn/
+trip-planner-backend/.classpath
+trip-planner-backend/.project
+trip-planner-backend/.settings/
+
+# Frontend (Angular)
+trip-planner-frontend/node_modules/
+trip-planner-frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db

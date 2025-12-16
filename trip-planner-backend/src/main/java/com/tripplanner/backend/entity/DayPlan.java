@@ -1,0 +1,30 @@
+package com.tripplanner.backend.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class DayPlan {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @ManyToOne
+    private Trip trip;
+
+    private Integer dayNumber;
+    private String placeName;
+    private String description;
+    private Double latitude;
+    private Double longitude;
+
+    // ✅ NEW
+    @Column(length = 500)
+    private String imageUrl;
+}
