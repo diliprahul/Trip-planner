@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Backend
+target/
+*.log
+
+# Frontend (Vite)
+node_modules/
+dist/
+.env
